@@ -1,27 +1,27 @@
-import { getQuestions } from "./database.js"
+// import { getQuestions } from "./database.js"
 
-const questions = getQuestions()
+// const questions = getQuestions()
 
-console.log(questions)
+// console.log(questions)
 
-export const Questions = () =>{
-    let html = `<ul>`
-    for (const question of questions){
-        html += `<li> ${question.q}</li>`
-    }
+// export const Questions = () =>{
+//     let html = `<ul>`
+//     for (const question of questions){
+//         html += `<li> ${question.q}</li>`
+//     }
 
-    html += `</ul>`
+//     html += `</ul>`
 
-    return html
-}
+//     return html
+// }
 
-const mainContainer = document.querySelector("#container")
+// const mainContainer = document.querySelector("#container")
 
-const applicationHTML= `
-<h1> Hey </h1>
+// const applicationHTML= `
+// <h1> Hey </h1>
 
-${Questions()}
-`
+// ${Questions()}
+// `
 
 
-mainContainer.innerHTML = applicationHTML
+// mainContainer.innerHTML = applicationHTML
