@@ -89,7 +89,7 @@ const questions = [
     answers: [
       { text: 'The Beatles released their album "Revolver"', correct: true },
       { text: 'England hosted and won the World Cup against West Germany at Wembley Stadium', correct: true },
-      { text: '', correct: true },
+      { text: 'The first Automated Teller Machine (ATM) was introduced', correct: true },
       { text: 'The first episode of the science fiction television series "Star Trek" aired', correct: true }
     ]
   },
@@ -103,19 +103,19 @@ const questions = [
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'Who were the founding twins of Rome, raised by Faustulus?',
     answers: [
       { text: 'Mario & Luigi', correct: false },
-      { text: 'Prof. Lupin & Sirius Black', correct: true },
+      { text: 'Prof. Lupin & Sirius Black', correct: false },
       { text: 'Ben & Jerry', correct: false },
-      { text: 'Romulus & Remus', correct: false },
+      { text: 'Romulus & Remus', correct: true },
     ]
   },
   {
     question: 'What is the chemical symbol for gold?',
     answers: [
-      { text: 'Au', correct: false },
-      { text: 'Go', correct: true },
+      { text: 'Au', correct: true },
+      { text: 'Go', correct: false },
       { text: 'Or', correct: false },
       { text: 'Ag', correct: false }
     ]
