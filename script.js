@@ -94,6 +94,33 @@ const questions = [
     ]
   },
   {
+    question: 'What was the company Nintendo originally known for?',
+    answers: [
+      { text: 'Playing Cards', correct: true },
+      { text: 'Soap', correct: false },
+      { text: 'Beer', correct: false },
+      { text: 'Furniture', correct: false }
+    ]
+  },
+  {
+    question: "What is Ely's middle name?",
+    answers: [
+      { text: 'Frank', correct: false },
+      { text: 'Julian', correct: false },
+      { text: 'Paul', correct: false },
+      { text: '___', correct: true }
+    ]
+  },
+  {
+    question: 'What day is December 25th?',
+    answers: [
+      { text: 'Easter', correct: false },
+      { text: 'Christmas', correct: true },
+      { text: 'Valentines Day', correct: false },
+      { text: 'Tree-Day', correct: false }
+    ]
+  },
+  {
     question: 'How would you pronounce the musical key: "A#" ?',
     answers: [
       { text: 'A-Number', correct: false },
