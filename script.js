@@ -42,6 +42,7 @@ function showQuestion(question) {
   })
 }
 
+//resets state to show a new question
 function resetState() {
   clearStatusClass(document.body)
   nextButton.classList.add('hide')
@@ -50,6 +51,7 @@ function resetState() {
   }
 }
 
+//when an answer is selected, the style should change to show green if correct or red if incorrect
 function selectAnswer(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
@@ -65,6 +67,7 @@ function selectAnswer(e) {
   }
 }
 
+
 function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
@@ -74,11 +77,15 @@ function setStatusClass(element, correct) {
   }
 }
 
+
+//clear the status for the next question coming in
 function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
 
+
+//all questions
 const questions = [
   {
     question: "What year is known as Y2K?",
