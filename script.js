@@ -12,6 +12,7 @@ nextButton.addEventListener('click', () => {
   setNextQuestion()
 })
 
+//when this func runs, the start button goes away and a random question is shown
 function startGame() {
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -20,11 +21,13 @@ function startGame() {
   setNextQuestion()
 }
 
+//move to the next question
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
+//here is the actual question with buttons for answers, checking if correct value is true
 function showQuestion(question) {
   questionElement.innerText = question.question
   question.answers.forEach(answer => {
